@@ -1,0 +1,80 @@
+main {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.fruta {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #d1e4ac;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 3px #d1e4ac;
+}
+
+.btnAddCart {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+    background-color: #89bd23;
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btnAddCart:hover {
+    color: #89bd23;
+    background-color: #fff;
+    outline: 1px solid #89bd23;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.nutri {
+    position: absolute;
+    padding: 3px 6px;
+    top: 13px;
+    color: #89bd23;
+    border: 1px solid #89bd23;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nutri:hover {
+    outline: 1px solid #89bd23;
+}
+
+.loading {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5em;
+    color: #5a791c;
+}
+
+@media screen and (max-width: 518px) {
+    main {
+        padding: 0px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0px 30px 0px;
+    }
+    .fruta {
+        width: 80%;
+    }
+    .nutri {
+        top: -38px;
+    }
+}

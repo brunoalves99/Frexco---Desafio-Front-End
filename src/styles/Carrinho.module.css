@@ -1,0 +1,164 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 72px);
+    padding: 30px;
+    background-color: #edf5de;
+}
+
+.carrinho {
+    width: 500px;
+    max-height: 350px;
+    border: 2px solid #89bd23;
+    border-radius: 10px;
+    margin:50px auto;
+    background-color: #fff;
+    padding: 20px;
+    overflow: auto;
+    text-align: center;
+}
+
+.carrinho::-webkit-scrollbar {
+    width: 12px;
+}
+
+.carrinho::-webkit-scrollbar-track {
+    background: #c8d1b7;
+    border-radius: 5px;
+}
+
+.carrinho::-webkit-scrollbar-thumb {
+    background: #7aa12b;
+    border-radius: 10px;
+} 
+
+.cartFruit {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgb(110, 158, 39);
+    margin-bottom: 5px;
+}
+
+.cartFruit p {
+    width: 100px;
+    text-align: start;
+    margin-left: 30px;
+}
+
+.add {
+    width: 25px;
+    height: 25px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(247, 94, 94);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.qty {
+    margin: 0px 10px;
+}
+
+.cartBtns {
+    min-width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalPrice {
+    border: 1px solid rgb(148, 165, 137);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.divBuy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnCleanCart,
+.btnBuy {
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #89bd23;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnBuy:hover {
+    color: #89bd23;
+    background-color: #fff;
+    outline: 1px solid #89bd23;
+}
+
+.btnCleanCart {
+    background-color: rgb(247, 94, 94);
+}
+
+.btnCleanCart:hover {
+    color: rgb(247, 94, 94);
+    background-color: #fff;
+    outline: 1px solid rgb(247, 94, 94);
+}
+
+.fruitName {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 518px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    .carrinho {
+        width: 100%;
+        border: 2px solid #89bd23;
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .cartFruit {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .cartFruit p {
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .divBuy {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnBuy {
+        margin-right: 0px;
+        margin-top: 10px;
+        order: 2;
+    }
+    .btnCleanCart {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
